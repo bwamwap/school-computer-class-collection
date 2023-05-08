@@ -1,0 +1,162 @@
+@font-face {
+    font-family: blehhh;
+    src: url(./PocketMonk-15ze.ttf)
+}
+
+
+
+div.bg-image {
+    background-image: url("poke-wallpaper.png");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+img.pokemon-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+center {
+    font-family: blehhh;
+    font-size: 25px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+#form-tasks {
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.data {
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type='text']{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+
+
+
+  input[type="submit"] {
+    background-color: rgb(206, 168, 175);
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .data {
+    top: 450px;
+  }
+
+  @media (max-width: 900px) {
+    body {
+      overflow: hidden;
+    }
+    input[type='text']{
+      width: 80%;
+    }
+    input {
+        margin-bottom: 130px;
+    } 
+    .data {
+        top: 400px;
+    }
+    div.stats {
+        margin-top: 150px;
+        padding-bottom: -250px;
+        overflow: hidden;
+    }
+
+    div.addinfo {
+      margin-top: 120px;
+      overflow: hidden;
+      padding-bottom: 30px;
+      position: fixed;
+      bottom: 100;
+      font-size: 50px;
+  }
+  }
+
+  div.stats {
+    position: static;
+    background-color: rgb(255, 192, 203, 0.8);
+    border: 1px;
+    border-color: aliceblue;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+    overflow: auto;
+  }
+
+  div.addinfo {
+    position: static;
+    background-color: rgb(255, 192, 203, 0.8);
+    border: 1px;
+    border-color: aliceblue;
+    font-weight: bold;
+    position: fixed;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+    overflow: auto;
+    font-size: 10px;
+  }
