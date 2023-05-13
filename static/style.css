@@ -19,7 +19,7 @@ body {
     font-size: 5vw;
     font-style: italic;
     font-family: title;
-    text-shadow: -5px -5px 0 rgb(0, 200, 255), -10px -10px 0 rgb(0, 150, 255), -15px -15px 0 rgb(0, 100, 255);
+    text-shadow: -0.5vw -0.5vw 0 rgb(0, 200, 255), -1vw -1vw 0 rgb(0, 150, 255), -1.5vw -1.5vw 0 rgb(0, 100, 255);
 }
 
 .headtext {
@@ -78,6 +78,8 @@ hr.solid {
 .catalogue {
     background-color: #d66363;
     border-radius: 0px 10px 10px 0px;
+    max-height: 100%;
+    overflow: scroll;
 }
 
 .projects {
@@ -97,6 +99,7 @@ hr.solid {
     width: 90%;
     margin: 1% auto 0% auto;
     border-radius: 10px;
+    margin-top: 10%;
 }
 
 .ten .catalogue {
@@ -112,4 +115,9 @@ hr.solid {
 
 .h2 {
     font-size: 30%;
+}
+
+.eleven {
+    max-height: 30%;
+    margin-top: 10%;
 }
