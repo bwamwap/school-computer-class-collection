@@ -3,11 +3,22 @@
   src: url(./Blonde.ttf);
 }
 
+@font-face {
+  font-family: title2;
+  src: url(./Haettenschweiler\ Regular.ttf)
+}
+
+@font-face {
+  font-family: normal;
+  src: url(./MYRIADPRO-REGULAR.OTF)
+}
+
 body {
   margin: 0px;
   padding: 0px;
   background: url(./lain.webp) no-repeat center fixed;
   background-size: cover auto;
+  font-family: normal;
 }
 
 .header {
@@ -32,6 +43,7 @@ body {
   vertical-align: center; 
   white-space: nowrap;
   top: 30vh;
+  text-rendering: pixelated;
 }
 
 .maintext {
@@ -54,34 +66,46 @@ body {
   text-align: center;
 } 
 
-.projects {
+#projects {
   color: white;
   font-size: 100%;
   word-wrap: normal;
-  overflow-wrap: normal1;
+  overflow-wrap: normal;
+  text-align: center;
+  /* display: none; */
+  background-color: #2bd6a3c7;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
-hr.solid {
+hr.red {
   border: 10px solid #ff0000;
-  margin: 0px 0px 5vh 0px;
+  margin: 0px;
+}
+
+
+hr.cream {
+  border: 10px solid #2bd6a3;
+  margin: 0px;
 }
 
 .eleven {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
   flex-direction: column;
-  background-color: rgb(214, 64, 64);
+  background-image: url(./field.gif);
+  background-size: 160vh;
   width: 90%;
   margin: 1% auto 0% auto;
   border-radius: 10px;
   max-height: 30%;
   margin-top: 10%;
-  margin-bottom: 5vh;
 }
 
 .desc h1 {
-  font-size: 100px;
-  padding: 70px 0;
+  font-size: 150px;
+
+  text-align: center;
 }
 
 .desc {
@@ -98,10 +122,6 @@ hr.solid {
   font-weight: 500;
 }
 
-.projects {
-  text-align: center;
-}
-
 .project-image {
   width: 50%;
   border: 5px solid #d88181;
@@ -109,13 +129,13 @@ hr.solid {
 
 .ten {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
   flex-direction: column;
-  background-color: rgb(0, 153, 255);
+  background-image: url(./night.gif);
+  background-size:120vh;
   width: 90%;
-  margin: 1% auto 0% auto;
+  margin: 0% auto 0% auto;
   border-radius: 10px;
-  margin-top: 10%;
 }
 
 .ten .catalogue {
@@ -135,12 +155,38 @@ hr.solid {
 
 .project-title {
   -webkit-text-fill-color: white;
-  -webkit-text-stroke: 3px purple;
+  -webkit-text-stroke: 7px purple;
+  font-family: title2;
+  font-style: italic;
 }
 
-button {
+.visit {
   border-radius: 5px;
   background-color: white;
   border-style: double;
   font-size: 20px;
+  background-color: #ffffff;
+}
+
+.vis {
+  width: 100vw;
+  border: 0px;
+  height: 25px;
+  background-color: #2bd6a3;
+}
+
+.main {
+  /* background-color: #ff0000c7; */
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 5000;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 10%;
 }

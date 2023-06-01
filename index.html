@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cool protfoolio!!!</title>
+    <script src="./static/script.js"></script>
     <link rel="stylesheet" href="./static/style.css">
-    <script type="text" src="./static/script.js"></script>
     
 </head>
 <body>
@@ -17,14 +17,21 @@
         <p></p>
     </div>
 
-    <hr class="solid">
+    <hr class="red">
 
-    <div class="maintext">
-        <h1 class="title">Welcome to my GitHub page!</h1>
-        <p class="opening">Here you will find several projects that I have done during my time in high school made using HTML, CSS, JavaScript, and Python <br>(maybe)</p>
+    <div class="main">
+        <div class="maintext">
+            <h1 class="title"><img src="./static/roll-frog.gif" alt="">Welcome to my GitHub page!<img src="./static/roll-frog.gif" alt=""></h1>
+            <p class="opening">Here you will find several projects that I have done during my time in high school made using HTML, CSS, JavaScript, and Python along with other stuff that i might add later on maybe maybe<br>(maybe)</p>
+        </div>
     </div>
 
-    <div class="projects">
+   <!-- <button class="vis" onclick="myFunction()"><b>V</b>  PROJECTS  <b>V</b> ( click :) )</button> -->
+
+   <hr class="cream">
+
+    <div id="projects">
+        <h3>PROJECTS</h3>
         <div class="ten">
             <div class="desc">
                 <h1 class="project-title">10</h1>
@@ -58,7 +65,7 @@
                     <h1>POKEDEX (Feb 17 2023)</h1>
                     <img src="./static/pokescreen.png" alt="" class="project-image">
                     <p>A site I made using a Pokemon API from <a href="https://www.pokeapi.co">pokeapi.co</a>, its capable of searching up pokemons and displaying <br>its name, sprites, abilities, and stats.</p>
-                    <a href="http://bwamwap.github.io/school-computer-class-collection/11/pokedex+project"><button>Visit</button></a>
+                    <a href="http://bwamwap.github.io/school-computer-class-collection/11/pokedex+project"><button class="visit">Visit</button></a>
                 </div>
                 <div class="hangman">
                     <h1>HANGMAN (April 2023)</h1>
