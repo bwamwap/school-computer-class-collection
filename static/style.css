@@ -73,9 +73,9 @@ body {
   overflow-wrap: normal;
   text-align: center;
   /* display: none; */
-  background-color: #2bd6a3c7;
   padding-top: 10%;
   padding-bottom: 10%;
+  background-color: #d62b64be;
 }
 
 hr.red {
@@ -108,18 +108,22 @@ hr.cream {
   text-align: center;
 }
 
-.desc {
-  border: 3px solid #d66363;
-  border-radius: 10px 0px 0px 10px;
-  vertical-align: middle;
+.eleven .desc {
   font-weight: 550;
+  padding-bottom: 10px;
+  border: 3px #d66363 solid;
+  border-radius: 10px 0px 0px 10px;
+  max-height: 100%;
+  padding: 30% 0;
 }
 
-.catalogue {
+
+.eleven .catalogue {
   background-color: #d66363;
   border-radius: 0px 10px 10px 0px;
   max-height: 100%;
   font-weight: 500;
+  padding-bottom: 10px;
 }
 
 .project-image {
