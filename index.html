@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cool protfoolio!!!</title>
     <script src="./static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#projects").toggle();
+            $("#contacts-main").toggle();
+            $(".vis").click(function(){
+                if ($('#projects').is(":visible")){
+                    $("#projects").slideUp();
+                }
+                else {
+                    $("#projects").slideDown();
+                }
+            });
+            $(".vis2").click(function(){
+                if ($('#contacts-main').is(":visible")){
+                    $("#contacts-main").slideUp();
+                }
+                else {
+                    $("#contacts-main").slideDown();
+                }
+            });
+          });
+    </script>
     <link rel="stylesheet" href="./static/style.css">
     
 </head>
@@ -26,11 +49,8 @@
         </div>
     </div>
 
-   <!-- <button class="vis" onclick="myFunction()"><b>V</b>  PROJECTS  <b>V</b> ( click :) )</button> -->
-
-   <hr class="cream">
-
     <div id="projects">
+        <hr class="cream">
         <h3>PROJECTS</h3>
         <p>(categorized based on what grade i was in when i did the project)</p>
         <div class="ten">
@@ -78,4 +98,16 @@
         </div>
     </div>
 
+    <button class="vis" onclick="myFunction()"><b>^</b>  PROJECTS  <b>^</b> ( click :) )</button>
+
+    <div id="contacts-main">
+        <div class="contacts">
+        <h1>DISCORD</h1>
+        <h2>bam#5258</h2>
+        <h1></h1>
+        </div>
+    </div>
+
+    <button onclick="myFunction2()" class="vis2" style="background-color: rgb(255, 0, 0);"><b>^</b>  CONTACTS  <b>^</b> ( click :) )</button>
+</body>
 </html>
